@@ -24,32 +24,34 @@ export default function Home() {
   })
 
   return (
-    <div className={styles.container}>
-      <div className={styles.logo}>
-        <Image src="/logo.jpg" alt="logo" width={120} height={120} />
-      </div>
-      <Head>
-        <title>Hardy Lingerie</title>
-      </Head>
+    <div className={styles.gradientBorder}>
+      <div className={styles.container}>
+        <div className={styles.logo}>
+          <Image src="/logo.svg" alt="logo" width={120} height={120} />
+        </div>
+        <Head>
+          <title>Hardy Lingerie</title>
+        </Head>
 
-      <span className={styles.title}>Hardy Lingerie</span>
+        <span className={styles.title}>Hardy Lingerie</span>
 
-      <div className={styles.grid}>
-        <ThemeProvider theme={theme}>
+        <div className={styles.grid}>
+          <ThemeProvider theme={theme}>
 
-          <Button
-            className={styles.button}
-            variant="contained"
-            color="secondary"
-            onClick={Revendedora}>Seja uma revendedora</Button>
+            <Button
+              className={styles.button}
+              variant="contained"
+              color="secondary"
+              onClick={Revendedora}>Seja uma revendedora</Button>
 
-          <Button
-            className={styles.button}
-            variant="contained"
-            color="secondary"
-            onClick={QuemSomos}>Quem somos</Button>
+            <Button
+              className={styles.button}
+              variant="contained"
+              color="secondary"
+              onClick={QuemSomos}>Quem somos</Button>
 
-        </ThemeProvider>
+          </ThemeProvider>
+        </div>
       </div>
     </div>
   )
