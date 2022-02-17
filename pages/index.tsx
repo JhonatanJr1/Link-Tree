@@ -15,6 +15,7 @@ export default function Home() {
     router.replace("https://hardylingerie.com/sobre-a-hardy/")
   }
 
+
   const theme = createTheme({
     palette: {
       secondary: {
